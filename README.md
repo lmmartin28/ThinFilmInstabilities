@@ -11,7 +11,7 @@ For More informations regarding the associated works, please refer to the follow
 This code file simulates the evolution of a film’s thickness over time using a set of partial differential equations (PDEs) applied to the system. The PDEs describe the evolution of the thickness h(t,()\ where ( represents the spatial coordinates of the substrate.
  
 Main Features:
-	Initial Conditions: The initial height profile of the film is defined as a function of the spatial coordinates _X\ and _Y.
+	Initial Conditions: The initial height profile of the film is defined as a function of the spatial coordinates /Theta_X and /Theta_Y.
 	Differential Operators: The code utilizes Fourier-based differentiation to compute spatial derivatives. This is followed by the solution of the time evolution equation using either a linear solver (`ode45`) or a stiff solver (`ode15s`).
 	Numerical Integration: The solver integrates over time using ODE solvers. It uses a matrix form for the evolution, and data is reshaped and visualized over time.
 	Mass Conservation: The mass conservation is checked during the time steps to ensure that no significant error occurs in mass calculations.
